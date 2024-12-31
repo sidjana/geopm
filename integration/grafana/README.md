@@ -73,17 +73,17 @@ Before deploying the GEOPM Prometheus exporter across the system for the
 first time, the prometheus & grafana servers need to be configured on the
 head node. The main steps to configure prometheus & grafana are:
 
-    A. Download and untar the prometheus & grafana builds
-    B. Configure the prometheus server with the port numbers over which
+    1. Download and untar the prometheus & grafana builds
+    2. Configure the prometheus server with the port numbers over which
        the exported metrics are expected to stream in from the target nodes
        being monitored.
-    C. Launch the prometheus server over a desired port over which the grafana server
+    3. Launch the prometheus server over a desired port over which the grafana server
        is expected to query the aggregated metrics from.
-    D. Configure the port number for the grafana server over which the end user is expected
+    4. Configure the port number for the grafana server over which the end user is expected
        to launch the web GUI.
-    E. Set the grafana credentials using which the end user is expected to visualize the Web UI
-    F. Download & import the grafana dashboard configuration file.
-    G. Terminate the prometheus & grafana server processes, post configuration.
+    5. Set the grafana credentials using which the end user is expected to visualize the Web UI
+    6. Download & import the grafana dashboard configuration file.
+    7. Terminate the prometheus & grafana server processes, post configuration.
 
 
 Steps-B through D can be achieved by using the `pbs_prometheus_launch.sh` script provided in
