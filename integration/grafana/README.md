@@ -97,8 +97,8 @@ the sane directory as this README.
     GRAFANA_SERVER_PORT=...    # Preferred port for the grafana server
 
 
-    # Next, use the launch script by passing the paths & ports identified
-    # in Step-1 as parameters
+    # Next, use the launch script by passing the paths & ports just identified
+    # above, as parameters
 
     cd $GEOPM_SRC/integration/grafana/
     ./pbs_prometheus_launch.sh $PROMETHEUS_DIR $PROMETHEUS_SERVER_PORT \
@@ -123,7 +123,7 @@ prometheus server running on `http://SERVER_NAME:PROMETHEUS_SERVER_PORT` as the 
 
 
 Step-G: Be sure to kill the prometheus and grafana servers after the configuration is
-compleed. If needed the PIDs for termination are printed by the `pbs_prometheus_launch.sh`
+completed. If needed the PIDs for termination are printed by the `pbs_prometheus_launch.sh`
 script after it launches the prometheus & grafana 
 ```bash
     pkill prometheus
